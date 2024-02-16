@@ -1,9 +1,10 @@
 const petImg = document.getElementById("pet-img");
 const images = {
    normal: "normal-dog.jpg",
-   hungry: "hungry-dog.jpg",
-   playful: "playful-dog.jpg",
-   adopted: "adopted-dog.jpg"
+   eating: "eatsarah.jpg",
+   playful: "playsarah.jpg",
+   adopted: "adopted.jpg",
+   sleep: "sleepsarah.jpg"
 }
 
 let Pet = {
@@ -20,15 +21,22 @@ document.getElementById ("adopt").addEventListener ("click", function() {
     petImg.src = images.adopted;
 });
 
+// For bedtime
+document.getElementById ("sleep").addEventListener ("click", function() {
+   Pet.adopted = true;
+   Pet.playful = false;
+   petImg.src = images.sleep;
+});
+
 // For feeding the pet
 document.getElementById ("feed").addEventListener ("click", function() {
    if (!Pet.adopted) { 
-      alert("You need to adopt a pet first!"); 
+      alert("You need to adopt Sarah first!"); 
    }
    else {
      Pet.hungry = false;
      Pet.playful = true;
-     petImg.src = images.normal;
+     petImg.src = images.eating;
    }
 });
 
