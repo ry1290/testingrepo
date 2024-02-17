@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background.gif') repeat;
+    background-size: 80px 80px;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+}
+
+#pet-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -50%);
+    z-index: -1;
+}
+
+#sarahgotchi-img {
+    margin-left: 10%;
+    filter: drop-shadow(5px 8px 5px #222); 
+}
+
+
+/* BUTTON STYLING */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    background-color: #a390ff; /* Light Purple background color */
+    border: 3px solid #a390ff; /* Initial border color (same as background) */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    position: relative;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif; /* Use a basic sans-serif font */
+  }
+  
+  .button:hover {
+    border: 3px solid #5c4e99; /* Change border color on hover (darker purple) */
+  }
+
+
+
