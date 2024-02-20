@@ -1,5 +1,23 @@
+/* STYLING/HTML LINKS
+
+Bars - https://www.fun-lover.com/mirrors/wtvzone/nevr2l82/
+Font Maker - https://www.pentacom.jp/pentacom/bitfontmaker2/
+Bitmap Fonts - http://www.dsg4.com/04/extra/bitmap/index.html
+Tiny Button Maker - http://www.acasystems.com/en/button-maker/
+
+
+
+*/
+
+
+* {
+    cursor: url('cursor.png'), auto;
+}
+
 body {
-    margin: 0;
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
     padding: 0;
     background: url('background.gif') repeat;
     background-size: 80px 80px;
@@ -12,24 +30,43 @@ h1 {
 
 .container {
     position: relative;
+    text-align: center;
 }
 
+
+/* SETTING UP PARENT-CHILD FOR SARAHGOTCHI */
+.parent {
+    position: relative;
+    text-align: center;
+    transform: translate(4%, 0%);
+    filter: drop-shadow(5px 8px 5px #222); 
+}
+
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, -45%);
+    z-index: -1;
+}
+
+
+/*
 #pet-img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-48%, -50%);
+    transform: translate(-53%, -50%);
     z-index: -1;
 }
 
 #sarahgotchi-img {
-    margin-left: 10%;
+    margin-left: 8%;
     filter: drop-shadow(5px 8px 5px #222); 
 }
-
+*/
 
 /* BUTTON STYLING */
-
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -45,9 +82,83 @@ h1 {
     font-family: 'Arial', sans-serif; /* Use a basic sans-serif font */
   }
   
-  .button:hover {
-    border: 3px solid #5c4e99; /* Change border color on hover (darker purple) */
+
+
+
+  /* STYLING THE BUTTON IMAGES */
+
+  .adopt-img {
+    filter: drop-shadow(2px 2px 2px #222); 
+  }
+  .feed-img {
+    filter: drop-shadow(2px 2px 2px #222); 
+  }
+  .play-img {
+    filter: drop-shadow(2px 2px 2px #222); 
+  }
+  .sleep-img {
+    filter: drop-shadow(2px 2px 2px #222); 
+  }
+
+  .adopt-img:hover {
+    cursor: url('cursor-pointer.png'), pointer;
+  }
+
+  .feed-img:hover {
+    cursor: url('cursor-pointer.png'), pointer;
+  }
+
+  .play-img:hover {
+    cursor: url('cursor-pointer.png'), pointer;
+  }
+
+  .sleep-img:hover {
+    cursor: url('cursor-pointer.png'), pointer;
   }
 
 
+  /* MULCH AD */
+
+  .mulchad {
+  }
+
+
+/* FOOTER */
+
+  #footer {
+    justify-content: center; /* horizontal align */
+    width: 100%;
+  }
+
+
+/* ADVERTISEMENT HOVER */
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block; /* Align with the center of the footer */
+}
+
+.hover-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -50%);
+    width: 10px;
+    height: 5px;
+}
+
+
+
+.hover-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52.5%);
+    opacity: 0;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+}
 
