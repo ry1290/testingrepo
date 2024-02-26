@@ -9,9 +9,30 @@ Tiny Button Maker - http://www.acasystems.com/en/button-maker/
 
 */
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #ac52f1;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ac52f1;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px inset #4b4949;
+  }
 
 * {
-    cursor: url('cursor.png'), auto;
+    /*cursor: url('cursor.png'), auto;*/
 }
 
 body {
@@ -19,7 +40,7 @@ body {
     width: 960px;
     margin: 0 auto;
     padding: 0;
-    background: url('background.gif') repeat;
+    background: url('background2.gif') repeat;
     background-size: 80px 80px;
 }
 
@@ -31,6 +52,21 @@ h1 {
 .container {
     position: relative;
     text-align: center;
+}
+
+.container2 {
+    /*font-family: "Source Sans 3", sans-serif;*/
+    font-weight: bold;
+    font-size: larger;
+    margin: 15px auto;
+    width: 42%;
+    color:#000000;
+    /*background-color: black;*/
+    background-image: url('container2bg.png');
+    border: 3px solid #757575;
+    box-shadow: inset 0px 0px 1px 1px #3c3b3b;
+    border-radius: 5px;
+    border-style: outset;
 }
 
 
@@ -48,6 +84,30 @@ h1 {
     left: 50%;
     transform: translate(-85%, -45%);
     z-index: -1;
+}
+
+.child2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-380%, 245%);
+    z-index: 1;
+}
+
+.child3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, 242%);
+    z-index: 1;
+}
+
+.child4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-235%, 275%);
+    z-index: 1;
 }
 
 
@@ -116,11 +176,11 @@ h1 {
     cursor: url('cursor-pointer.png'), pointer;
   }
 
+/* SARAHGOTCHI BUTTON STYLING */
 
-  /* MULCH AD */
-
-  .mulchad {
-  }
+    .round1:hover {
+        cursor: url('cursor-pointer.png'), pointer;
+    }
 
 
 /* FOOTER */
@@ -162,3 +222,24 @@ h1 {
     opacity: 1;
 }
 
+
+
+
+
+/*BS*/
+.green-box {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+  }
+
+  .invisible-button {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Make the button invisible */
+    cursor: pointer;
+  }

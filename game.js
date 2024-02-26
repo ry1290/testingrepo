@@ -4,7 +4,10 @@ const images = {
    eating: "eatsarah.jpg",
    playful: "playsarah.jpg",
    adopted: "adopted.jpg",
-   sleep: "sleepsarah.jpg"
+   sleep: "sleepsarah.jpg",
+   exploded: "explode.gif",
+   picnic: "picnic.gif",
+   dog: "dog.gif"
 }
 
 let Pet = {
@@ -53,4 +56,18 @@ document.getElementById ("play").addEventListener ("click", function() {
      Pet.playful = false;
      petImg.src = images.playful;
   }
+});
+
+// For the sarahgotchi buttons
+
+document.getElementById ("explode").addEventListener ("click", function() {
+   petImg.src = images.exploded;
+});
+
+document.getElementById ("explode2").addEventListener ("click", function() {
+   petImg.src = images.picnic;
+});
+
+document.getElementById ("explode3").addEventListener ("click", function() {
+   petImg.src = images.dog;
 });
